@@ -1,4 +1,6 @@
 import random
+import time 
+
 print("WELCOME TO DICE SIMULATOR")
 print("JUST ENTER 'Y' FOR ROLLING THE DICE OR 'N' FOR VICE VERSA")
 choice = input("DO YOU WANT TO ROLL THE DICE? (Y/N) : ")
@@ -27,6 +29,7 @@ def roll_dice():
     a8 = "  "
     a9 = "  "
     print("ROLLING DICE...........")
+    time.sleep(2)
     print(" ")
     dc = random.randint(1,6)
     if dc==1:
